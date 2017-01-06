@@ -27,7 +27,7 @@ mboot:
     dd code
     dd bss
     dd end
-    dd _start
+    dd start
 
 ; This is an endless loop here. Make a note of this: Later on, we
 ; will insert an 'extern _main', followed by 'call _main', right
