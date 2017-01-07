@@ -33,7 +33,8 @@ mboot:
 ; will insert an 'extern _main', followed by 'call _main', right
 ; before the 'jmp $'.
 stublet:
-    jmp $
+	extern _main
+    call _main
 
 
 ; Shortly we will add code for loading the GDT right here!
