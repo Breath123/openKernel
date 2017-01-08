@@ -50,7 +50,7 @@ void _main()
 {
     int i;
 
-    //gdt_install();
+    gdt_install();
     //idt_install();
     //isrs_install();
     //irq_install();
