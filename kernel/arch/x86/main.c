@@ -53,17 +53,17 @@ void _main()
     gdt_install();
     idt_install();
     isrs_install();
-    //irq_install();
+    irq_install();
     init_video();
     //timer_install();
     //keyboard_install();
 
-    //__asm__ __volatile__ ("sti");
+    __asm__ __volatile__ ("sti");
 
     puts("Hello World!\n");
 
-    i = 10 / 0;
-    putch(i);
+    //i = 10 / 0;
+    //putch(i);
 
     for (;;);
 }

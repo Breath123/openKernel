@@ -35,17 +35,17 @@ extern void cls();
 extern void gdt_set_gate(int num, unsigned long base, unsigned long limit, unsigned char access, unsigned char gran);
 extern void gdt_install();
 
-/* IDT.C
+/* IDT.C */
 extern void idt_set_gate(unsigned char num, unsigned long base, unsigned short sel, unsigned char flags);
-extern void idt_install();*/
+extern void idt_install();
 
-/* ISRS.C
-extern void isrs_install();*/
+/* ISRS.C */
+extern void isrs_install();
 
-/* IRQ.C
+/* IRQ.C */
 extern void irq_install_handler(int irq, void (*handler)(struct regs *r));
 extern void irq_uninstall_handler(int irq);
-extern void irq_install();*/
+extern void irq_install();
 
 /* TIMER.C
 extern void timer_wait(int ticks);
